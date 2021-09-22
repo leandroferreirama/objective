@@ -1,0 +1,309 @@
+/*
+    *Configurações do arquivo 
+*/
+body{
+    font-family:PT Sans;
+    color:#555;
+    background-color: #e5e5e5;
+    margin: 0;
+    font-size: 16px;
+}
+.modal{
+    position: fixed;
+	top:0px;
+	right: -2000px;
+    width: 100vw;
+    height: 100vh;
+	display:block;
+	z-index: 999;
+    color:#555;
+    background-color: #e5e5e5;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.slide-modal {
+    right: 0; /* Coloca o menu na poisiçáo desejada de maneira a ficar visível */
+}
+/*
+    *FIM Configurações do arquivo
+    *Configuração do cabeçalho
+*/
+header{
+    margin: .5px;
+    background-color: #FFF;
+    padding: 16px 24px;
+}
+.logo{
+    float: left;
+    margin-top: 12px;
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+}
+.candidato{
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    font-size: .85rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.name{
+    margin-right: 3px;
+}
+.logado{
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    border-radius:5px;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+.logado:hover{
+    background-color: #555;
+    color: #F5F5F5;
+}
+
+/*
+    *FIM Configurações do arquivo
+    *Configuração do corpo
+*/
+section{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 13px;
+}
+h4{
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.input{
+    border: 0;
+    padding: 7px;
+    border-radius: 5px;
+}
+.input-search {
+    position:absolute;
+    top:0; right:0;
+    z-index:10;
+    border:none;
+    background:transparent;
+    outline:none;
+    color: #8E8E8E;
+    margin-top: 5px;
+}
+
+.input-line {
+    position: relative;
+    width: 250px;
+}
+
+.input-line input {
+    width: 100%;
+}
+#container-personagens{
+    margin-top: 40px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.cabecalho-personagens{
+    color: #8e8e8e;
+    font-size: 0.75rem;
+    text-align: left;
+    width:100%;
+    padding-left:24px;
+}
+.row-personagem{
+    background-color: #FFF;
+    border-radius: 3px;
+	box-shadow: 0 0 5px #8e8e8e;
+    margin-bottom: 8px;
+}
+.row-personagem:hover{
+	box-shadow: 0 0 5px #333;
+}
+.item-personagens{
+    display: flex;
+    text-align: left;
+    width:100%;
+    padding: 20px 24px;
+    height:45px;
+}
+.item-complemento{
+    font-size: 0.8rem;
+}
+.item-row{
+    align-items: center;
+}
+.item-column{
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-personagem{
+    width: 25%;
+}
+.nome-personagem{
+    width: 75%;
+    font-weight: bold;
+}
+.img-personagem{
+    border-radius: 5px;
+}
+.p-serie{
+    margin: 0;
+    font-size:14px;
+}
+/*
+    *FIM Configurações do corpo
+    *Configuração do footer
+*/
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 90px;
+    background-color: #FFF;
+}
+.pagination,.close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.pagination div:not(.numbers,.paginate){
+    cursor:pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #8E8E8E;
+}
+.pagination div:not(.numbers,.paginate):hover{
+    color: #167ABC;
+}
+.paginate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    width: 40px;
+    height: 32px;
+    background-color: #F5F5F5;
+    border:1px solid #e5e5e5;
+    
+    border-radius: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: #555;
+}
+.paginate:hover,.active{
+    color: #FFF;
+    background-color: #167ABC;
+}
+.numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load{
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 80px;
+}
+.btn{
+    display:inline-block;
+    font-weight:600;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    border:1px solid transparent;
+    padding:.275rem .75rem;
+    font-size:1rem;
+    line-height:1.5;
+    border-radius:.25rem;
+    color:#fff;
+    background-color:#007bff;
+}
+.btn:hover{
+    background-color:#0162c9;
+    border-color:#0162c9
+}
+#container{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#container-esquerda{
+    display: flex;
+    min-width: 600px;
+}
+/*
+    *FIM
+    *Configurações de tamanho
+*/
+@media only screen and (max-width: 639px){
+	body{
+		font-size:14px;
+	}
+    header{
+        padding: 8px 20px;
+    }
+    #container-personagens{
+        margin-top: 30px;
+    }
+    .item-personagens{
+        padding: 14px 20px;
+    }
+    .candidato{
+        flex-direction: column;
+        font-size: .75rem;
+    }
+    .logado{
+        padding: 11px;
+    }
+    h1,h4{
+        text-align: center;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    .input-line{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-complemento,.item-column,.paginate-mobile{
+        display: none;
+    }
+    #container{
+        flex-direction: column;
+    }
+    .md-logo img{
+        width: 96px;
+        height: 96px;
+    }
+}
+@media only screen and (max-width: 374px){
+	body{
+		font-size:12px;
+	}
+    .candidato{
+        flex-direction: column;
+        font-size: .65rem;
+    }
+}
+
+/*
+    *FIM Configurações de tamanho
+*/

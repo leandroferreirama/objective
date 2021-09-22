@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Objetive - Marvel</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img width="119" height="22" src="assets/img/logo.svg" alt="Objective">
+            </div>
+            <div class="header">
+                <div class="candidato">
+                    <div class="name">
+                        <strong>Leandro F. Marcelli</strong>
+                    </div>
+                    <div>
+                        Test de Front-end
+                    </div>
+                </div>
+                <div class="logado">
+                    CB
+                </div>
+            </div>
+        </header>
+        <section id="paginate">
+            <h1>Busca de personagens</h1>
+            <h4>Nome do personagem</h4>
+            <div class="input-line">
+                <input type="text" name="search" placeholder="Search" class="input">
+                <button class="input-search" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+            <div id="container-personagens">
+                <div class="row">
+                    <div class="cabecalho-personagens">
+                        Personagem
+                    </div>
+                    <div class="cabecalho-personagens item-complemento">
+                        Séries
+                    </div>
+                    <div class="cabecalho-personagens item-complemento">
+                        Eventos
+                    </div>
+                </div>
+                <div id="conteudo-personagem">
+                    
+                </div>
+            </div>    
+        </section>
+
+        <footer>
+            
+            <div class="pagination">
+                <div class="first"><i class="fas fa-angle-double-left"></i></div>
+                <div class="prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="numbers">
+                    <div>1</div>
+                </div>
+                <div class="next"><i class="fas fa-chevron-right"></i></div>
+                <div class="last"><i class="fas fa-angle-double-right"></i></div>
+            </div>
+            
+        </footer>
+        <div class="modal">
+            <header>
+                <div class="logo">
+                    <img width="119" height="22" src="assets/img/logo.svg" alt="Objective">
+                </div>
+                <div class="header">
+                    <div class="candidato">
+                        <div class="name">
+                            <strong>Leandro F. Marcelli</strong>
+                        </div>
+                        <div>
+                            Test de Front-end
+                        </div>
+                    </div>
+                    <div class="logado">
+                        CB
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div id="container">
+                    <div class="md-logo"></div>
+                    <h1 class="md-nome-personagem"></h1>
+                </div>
+                
+                <div>
+                    <h4>Biografia</h4>
+                    <div class="md-description"></div>
+                </div>
+                <div>
+                    <h4>Séries</h4>
+                    <div class="md-series"></div>
+                </div>
+                <div>
+                    <h4>Eventos</h4>
+                    <div class="md-eventos"></div>
+                </div>
+                
+            </section>
+            <footer>
+                <div class="close">
+                    <button class="btn" id="btnFechar">Close</button>
+                </div>
+            </footer>
+        </div>
+        <img src="assets/img/carregando.gif" alt="load" class="load">
+    </body>
+    <script type="text/javascript" src="assets/js/md5.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    
+</html>
